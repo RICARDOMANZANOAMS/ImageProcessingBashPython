@@ -18,10 +18,12 @@
             {  "enabled":true,
                 "res":32
 
-            },
+            }
+        },
+        {
             "expanding":
             {
-                "enable":true,
+                "enabled":true,
                 "value":10
             }
         }
