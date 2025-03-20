@@ -15,8 +15,7 @@ jq -c '.[]' $jsonFile | while read -r item; do
             
             if [ "$enabled_value" = "true" ]; then
                 echo "true value"
-                python3 /mnt/c/Ricardo/personal/ImageProcessingBashPython/src/test.py "$item2"
-                
+                python3 /mnt/c/Ricardo/personal/ImageProcessingBashPython/src/test.py "$key"                
             else
                 echo "false value"
             fi
