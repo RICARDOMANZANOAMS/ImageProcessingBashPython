@@ -1,0 +1,34 @@
+{ "inputs":[ 
+            { "jpg": {
+                "enabled": true,
+                "path":"data/"    
+                }
+            },
+            {
+                "raster":{
+                    "enabled":true,
+                    "path":"data/"
+                }
+            }
+        ]
+        ,
+    "preprocessing":
+    
+        [{"sampling":
+            {  "enabled":true,
+                "res":32
+
+            },
+            "expanding":
+            {
+                "enable":true,
+                "value":10
+            }
+        }
+    ]
+    ,
+    "classification":
+    {   
+        "enabled":true
+    }
+}
