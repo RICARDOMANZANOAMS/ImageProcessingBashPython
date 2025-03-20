@@ -12,9 +12,11 @@ jq -c '.[]' $jsonFile | while read -r item; do
         echo $keys
         for key in $keys; do
             enabled_value=$(echo "$item2" | jq -r --arg key "$key" '.[$key].enabled')
-            echo $enabled_value
+            
             if [ "$enabled_value" = "true" ]; then
                 echo "true value"
+                python3 /mnt/c/Ricardo/personal/ImageProcessingBashPython/src/test.py "$item2"
+                
             else
                 echo "false value"
             fi
